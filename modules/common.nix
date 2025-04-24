@@ -38,10 +38,12 @@
   console.keyMap = "slovene";
 
   # User
+  users.groups.nick = {};
+
   users.users.nick = {
     isNormalUser = true;
     description = "Nick";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "nick" ];
     packages = with pkgs; [
       kdePackages.kate
     ];
