@@ -7,7 +7,6 @@
   programs.home-manager.enable = true;
 
   home.packages = with pkgs; [
-    git
     #browsers
     qutebrowser
     brave
@@ -21,20 +20,6 @@
   home.file.".config/neofetch/config.conf".source = ./dotfiles/neofetch.conf;
 
   home.file."bruh.txt".source = ./dotfiles/bruhmoment.txt;
-
-  programs.git = {
-    enable = true;
-    userName = "NikP295";
-    userEmail = "nikposedi295@gmail.com";
-    
-    extraConfig = {
-      safe.directory = "/etc/nixos";
-    };
-
-  };
-
- 
-
 
 
   home.stateVersion = "24.11";
