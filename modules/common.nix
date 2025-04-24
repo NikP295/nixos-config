@@ -49,7 +49,15 @@
     ];
     shell = pkgs.zsh;
   };
+  
+  system.activationScripts.fixEtcNixosOwnership.text = ''
+    chown -R nick:nick /etc/nixos
+  '';
 
+
+
+
+  
   # Apps
   #programs.firefox.enable = true;
   

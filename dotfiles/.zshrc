@@ -23,6 +23,9 @@ alias programiranje-ESP='cd ~/Documents/programiranje/ESP/; python-start'
 alias programiranje-Python='cd ~/Documents/programiranje/Python/; python-start'
 alias programiranje='cd ~/Documents/programiranje'
 
+alias nixos-git-push='/etc/nixos/./push_to_git.sh'
+
+
 alias bruh='echo BruhMoment'
 
 
