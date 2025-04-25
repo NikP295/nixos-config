@@ -4,7 +4,8 @@
   environment.systemPackages = with pkgs; [
     platformio
     python39
-    rustup
+    rustc
+    cargo
     gcc
     gdb
     clang
