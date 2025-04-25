@@ -7,6 +7,7 @@
     ../hardware/legion-hw.nix
     ../modules/common.nix
     ../modules/plasma.nix
+    ../modules/programming.nix
   ];
   
   nixpkgs.config.allowUnfree = true;

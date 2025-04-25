@@ -9,10 +9,7 @@
     oh-my-zsh
     neofetch
     home-manager
-   #coding
-    platformio
     git
-    python39
    #misc
    steam
    wine
