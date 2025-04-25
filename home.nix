@@ -21,7 +21,13 @@
 
   home.file."bruh.txt".source = ./dotfiles/bruhmoment.txt;
 
-  home.file.".local/share/plasma/look-and-feel/metadata.json".source = ./dotfiles/plasma/look-and-feel/metadata.json;
+  home.file.".local/share/plasma/look-and-feel/org.kde.breezedark.desktop/metadata.json".source = ./dotfiles/plasma/look-and-feel/org.kde.breezedark.desktop/metadata.json;
+
+  home.file.".local/share/plasma/look-and-feel/org.kde.breezedark.desktop/contents/defaults".source = ./dotfiles/plasma/look-and-feel/org.kde.breezedark.desktop/contents/defualts;
+
+  home.file.".local/share/plasma/look-and-feel/org.kde.breezedark.desktop/contents/layouts/org.kde.plasma.desktop-layout.js".source = ./dotfiles/plasma/look-and-feel/org.kde.breezedark.desktop/contents/layouts/org.kde.plasma.desktop-layout.js;
+  home.file.".local/share/plasma/look-and-feel/org.kde.breezedark.desktop/contents/defaults".source = ./dotfiles/plasma/look-and-feel/org.kde.breezedark.desktop/contents/defualts;
+  home.file.".local/share/plasma/look-and-feel/org.kde.breezedark.desktop/contents/defaults".source = ./dotfiles/plasma/look-and-feel/org.kde.breezedark.desktop/contents/defualts;
 
   home.stateVersion = "24.11";
 }
