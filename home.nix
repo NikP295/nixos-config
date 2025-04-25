@@ -21,6 +21,7 @@
 
   home.file."bruh.txt".source = ./dotfiles/bruhmoment.txt;
 
+  home.file.".local/share/plasma/look-and-feel/metadata.json".source = ./dotfiles/plasma/look-and-feel/metadata.json;
 
   home.stateVersion = "24.11";
 }
