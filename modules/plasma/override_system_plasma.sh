@@ -6,6 +6,8 @@ cp /etc/nixos/dotfiles/plasma/plasmashellrc ~/.config/plasmashellrc
 
 cp /etc/nixos/dotfiles/plasma/kwinrc ~/.config/kwinrc
 
+cp /etc/nixos/dotfiles/plasma/konsolerc ~/.config/konsolerc
+
 cp /etc/nixos/dotfiles/plasma/kwinoutputconfig.json ~/.config/kwinoutputconfig.json 
 
 cp -rf /etc/nixos/dotfiles/backgrounds ~/Pictures/

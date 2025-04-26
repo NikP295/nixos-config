@@ -21,6 +21,11 @@
       [General]
       background=/etc/sddm_background.png
     '')
+     
+      pkgs.kdePackages.plasma-browser-integration
+      pkgs.kdePackages.yakuake
+
+
   ];
 
   #environment.etc."sddm_background.png".source = /home/nick/Pictures/backgrounds/cyberpunk_city.png;
