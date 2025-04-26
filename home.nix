@@ -29,7 +29,6 @@
 
   home.file.".config/kglobalshortcutsrc".source = ./dotfiles/plasma/kglobalshortcutsrc;
 
-  home.file.".local/share/color-schemes/".source = ./dotfiles/plasma/color-schemes/;
   home.file.".local/share/color-schemes/BreezeDark.colors".source = ./dotfiles/plasma/color-schemes/BreezeDark.colors;
   home.file.".local/share/color-schemes/BreezeClassic.colors".source = ./dotfiles/plasma/color-schemes/BreezeClassic.colors;
   home.file.".local/share/color-schemes/Oxygen.colors".source = ./dotfiles/plasma/color-schemes/Oxygen.colors;
