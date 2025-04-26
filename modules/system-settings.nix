@@ -6,13 +6,13 @@
   config.system.stateVersion = "24.11";
   
   # Auto upgrades (updates)
-  system.autoUpgrade.enable = true;
-  system.autoUpgrade.dates = "weekly";
+  config.system.autoUpgrade.enable = true;
+  config.system.autoUpgrade.dates = "weekly";
 
   # Cleanup
-  nix.gc.automatic = true;
-  nix.gc.dates = "daily";
-  nix.gc.options = "--delete-older-than 10d";
-  nix.settings.auto-optimise-store = true;
+  config.nix.gc.automatic = true;
+  config.nix.gc.dates = "daily";
+  config.nix.gc.options = "--delete-older-than 10d";
+  config.nix.settings.auto-optimise-store = true;
 }
 
