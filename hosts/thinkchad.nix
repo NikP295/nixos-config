@@ -19,7 +19,7 @@
   boot.kernelModules = [ "amdgpu" ];
  
   hardware.graphics.enable = true;
-  hardware.graphics.driSupport32Bit = true;
+  hardware.graphics.enable32Bit = true;
 
   hardware.cpu.amd.updateMicrocode = true;
 
