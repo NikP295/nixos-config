@@ -1,5 +1,5 @@
 {
-  description = "A simple NixOS flake";
+  description = "Main flake setup";
 
   inputs = {
     # NixOS official package source, using the nixos-24.11 branch here
@@ -12,7 +12,7 @@
 
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: {
-    # nixos = current (legion) hostname, change probably if different idk 
+    # nixos-legion = current (legion) hostname, change probably if different idk 
     nixosConfigurations.nixos-legion = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs; dotfiles = ./dotfiles; };
       system = "x86_64-linux";
@@ -30,7 +30,7 @@
 	  
 	  home-manager.backupFileExtension = "hm-backup";
 
-	  home-manager.users.nick = import ./home.nix { inherit pkgs config; };
+	  home-manager.users.nick = import ./home_nick.nix { inherit pkgs config; };
 
         })
       ];
