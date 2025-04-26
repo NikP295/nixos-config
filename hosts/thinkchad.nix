@@ -13,7 +13,7 @@
   nixpkgs.config.allowUnfree = true;
 
   networking.hostName = "nixos-thinkchad";
- 
+  networking.firewall.enable = true; 
 
   boot.kernelModules = [ "amdgpu" ];
  
