@@ -6,7 +6,7 @@
   imports = [
     ../hardware/legion-hw.nix
     ../modules/common.nix
-    ../modules/plasma.nix
+    ../modules/plasma/plasma.nix
     ../modules/programming.nix
   ];
   
