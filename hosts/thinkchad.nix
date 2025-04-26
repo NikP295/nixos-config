@@ -4,7 +4,7 @@
 {
 
   imports = [
-    ../hardware/legion-hw.nix
+    ../hardware/thinkchad-hw.nix
     ../modules/common.nix
     ../modules/plasma/plasma.nix
     ../modules/programming.nix
