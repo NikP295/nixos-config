@@ -8,7 +8,7 @@
     ../modules/common.nix
     ../modules/plasma/plasma.nix
     ../modules/programming.nix
-    ../modules/state-version.nix
+    ../modules/system-settings.nix
   ];
   
   nixpkgs.config.allowUnfree = true;
