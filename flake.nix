@@ -1,5 +1,4 @@
 {
-
   description = "Main flake setup";
 
   inputs = {
@@ -16,8 +15,9 @@
       nixos-thinkchad = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; dotfiles = ./dotfiles; };
         system = "x86_64-linux";
+
         modules = [
-	  ./modules/home-import.nix
+          ./modules/home-import.nix
           home-manager.nixosModules.home-manager
           ./hosts/thinkchad.nix
         ];
