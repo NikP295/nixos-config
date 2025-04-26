@@ -24,4 +24,6 @@ cp -rf ~/Pictures/backgrounds /etc/nixos/dotfiles/
 
 cp /etc/sddm_background.png /etc/nixos/dotfiles/backgrounds/sddm_background.png
 
+cp -rf ~/.oh-my-zsh /etc/nixos/dotfiles/
+
 echo 'Mah wahyffff - Bor(at)'

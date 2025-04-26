@@ -10,6 +10,10 @@ cp /etc/nixos/dotfiles/plasma/kwinoutputconfig.json ~/.config/kwinoutputconfig.j
 
 cp -rf /etc/nixos/dotfiles/backgrounds ~/Pictures/
 
+cp -rf /etc/nixos/dotfiles/.oh-my-zsh/ ~/ 
+
 sudo cp /etc/nixos/dotfiles/backgrounds/sddm_background.png /etc/sddm_background.png
+
+
 
 echo 'Great success!! - Bor(at)'
