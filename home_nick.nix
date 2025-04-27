@@ -13,7 +13,7 @@
     #gaming
     discord
     #misc
-    wineview-cdm
+    widevine-cdm
   ];
   
     nixpkgs.overlays = [

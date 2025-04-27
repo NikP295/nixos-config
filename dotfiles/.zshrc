@@ -23,8 +23,11 @@ alias programiranje-ESP='cd ~/Documents/programiranje/ESP/; python-start'
 alias programiranje-Python='cd ~/Documents/programiranje/Python/; python-start'
 alias programiranje='cd ~/Documents/programiranje'
 
-alias nixos-git-push='/etc/nixos/./push_to_git.sh'
-alias nixos-git-stage='/etc/nixos/./stage_to_git.sh' # just to be able to nixos-rebuild
+alias nixos-git-push='/etc/nixos/scripts/push_to_git.sh'
+alias nixos-git-stage='/etc/nixos/scripts/stage_to_git.sh' # just to be able to nixos-rebuild
+
+alias nixos-copy-system='/etc/nixos/scripts/copy_system_configs.sh'
+alias nixos-override-system='/etc/nixos/scripts/override_system_configs.sh' 
 
 
 

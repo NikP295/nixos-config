@@ -1,4 +1,4 @@
-git -C /etc/nixos add .
+git -C /etc/nixos add /etc/nixos/
 
 current_time=$(date)
 
