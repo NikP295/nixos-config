@@ -5,6 +5,7 @@
     neovim
     ripgrep
     fd
+    wl-clipboard
 
   ];
 

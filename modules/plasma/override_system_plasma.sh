@@ -20,6 +20,8 @@ cp /etc/nixos/dotfiles/qutebrowser/config.py ~/.config/qutebrowser/config.py
 
 cp -rf /etc/nixos/dotfiles/qutebrowser/themes ~/.config/qutebrowser/
 
+cp -rf /etc/nixos/dotfiles/nvim ~/.config/
+
 
 
 

@@ -18,7 +18,12 @@ cp -rf ~/.oh-my-zsh /etc/nixos/dotfiles/
 
 cp ~/.config/qutebrowser/config.py /etc/nixos/dotfiles/qutebrowser/config.py
 
-cp ~/.config/qutebrowser/themes /etc/nixos/dotfiles/qutebrowser/
+cp -rf ~/.config/qutebrowser/themes /etc/nixos/dotfiles/qutebrowser/
+
+cp -rf ~/.config/nvim/ /etc/nixos/dotfiles/
+
+
+
 
 
 echo 'Mah wahyffff - Bor(at)'

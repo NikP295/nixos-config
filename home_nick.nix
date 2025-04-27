@@ -13,8 +13,17 @@
     #gaming
     discord
     #misc
-    
+    wineview-cdm
   ];
+  
+    nixpkgs.overlays = [
+    (final: prev: {
+      qutebrowser = prev.qutebrowser.override {
+        enableWideVine = true;
+      };
+    })
+  ];
+
 
   home.file.".zshrc".source = ./dotfiles/.zshrc;
   home.file.".config/neofetch/config.conf".source = ./dotfiles/neofetch.conf;
