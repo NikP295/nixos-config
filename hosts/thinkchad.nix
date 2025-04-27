@@ -9,6 +9,7 @@
     ../modules/plasma/plasma.nix
     ../modules/programming.nix
     ../modules/system-settings.nix
+    ../modules/neovim.nix
   ];
   
   nixpkgs.config.allowUnfree = true;

@@ -4,7 +4,6 @@
   environment.systemPackages = with pkgs; [
    #basic stuff 
     vim
-    neovim
     zsh
     oh-my-zsh
     neofetch

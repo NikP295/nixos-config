@@ -16,6 +16,11 @@ cp -rf /etc/nixos/dotfiles/.oh-my-zsh/ ~/
 
 sudo cp /etc/nixos/dotfiles/backgrounds/sddm_background.png /etc/sddm_background.png
 
+cp /etc/nixos/dotfiles/qutebrowser/config.py ~/.config/qutebrowser/config.py
+
+cp -rf /etc/nixos/dotfiles/qutebrowser/themes ~/.config/qutebrowser/
+
+
 
 
 echo 'Great success!! - Bor(at)'

@@ -16,6 +16,9 @@ cp /etc/sddm_background.png /etc/nixos/dotfiles/backgrounds/sddm_background.png
 
 cp -rf ~/.oh-my-zsh /etc/nixos/dotfiles/
 
+cp ~/.config/qutebrowser/config.py /etc/nixos/dotfiles/qutebrowser/config.py
+
+cp ~/.config/qutebrowser/themes /etc/nixos/dotfiles/qutebrowser/
 
 
 echo 'Mah wahyffff - Bor(at)'
