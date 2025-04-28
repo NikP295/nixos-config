@@ -11,7 +11,14 @@
     ../modules/system-settings.nix
     ../modules/neovim.nix
   ];
-  
+ 
+  environment.systemPackages = with pkgs; [
+    mesa
+    amdvlk
+    vulkan-loader
+  ];
+
+
   nixpkgs.config.allowUnfree = true;
 
   networking.hostName = "nixos-thinkchad";

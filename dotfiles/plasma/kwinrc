@@ -37,6 +37,9 @@ screenGapTop=7
 [Tiling]
 padding=4
 
+[Tiling][27b8a485-dede-5bbb-9bd0-0cfc52449f58]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Tiling][ec8ae6e5-1716-534c-b4ed-3aa821077486]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 

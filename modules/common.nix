@@ -12,6 +12,7 @@
    #misc
    steam
    wine
+   winetricks
   ];
 
   networking.networkmanager.enable = true;

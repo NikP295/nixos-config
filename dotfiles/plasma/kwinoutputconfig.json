@@ -4,16 +4,16 @@
             {
                 "allowSdrSoftwareBrightness": false,
                 "autoRotation": "InTabletMode",
-                "brightness": 1,
+                "brightness": 0.65,
                 "colorProfileSource": "sRGB",
                 "connectorName": "eDP-1",
-                "edidHash": "29469a6280c5f526c000f195e2673741",
-                "edidIdentifier": "AUO 25069 0 0 2016 0",
+                "edidHash": "fe51604409f72dcca1cdac5268b1a1f6",
+                "edidIdentifier": "CMN 5652 0 16 2021 0",
                 "highDynamicRange": false,
                 "iccProfilePath": "",
                 "mode": {
-                    "height": 1080,
-                    "refreshRate": 60052,
+                    "height": 1200,
+                    "refreshRate": 60003,
                     "width": 1920
                 },
                 "overscan": 0,
