@@ -7,6 +7,9 @@ c.colors.webpage.darkmode.enabled = True
 c.colors.webpage.darkmode.policy.images = 'never'
 c.colors.webpage.darkmode.policy.page = 'always'
 
+c.colors.webpage.bg = "black"
+
+
 # Adblock settings
 c.content.blocking.enabled = True
 c.content.blocking.method = 'auto'
