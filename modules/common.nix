@@ -13,6 +13,7 @@
    steam
    wine
    winetricks
+   protontricks
   ];
 
   networking.networkmanager.enable = true;
@@ -73,13 +74,6 @@
     dedicatedServer.openFirewall = true;
     localNetworkGameTransfers.openFirewall = true;
   };
-
-
-
-
-
-
-
 
 
   boot.loader.systemd-boot.enable = true; 

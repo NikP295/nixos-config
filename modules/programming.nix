@@ -3,7 +3,7 @@
 {
   environment.systemPackages = with pkgs; [
     platformio
-    python39
+    python314
     rustc
     cargo
     gcc
