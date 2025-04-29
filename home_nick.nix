@@ -10,6 +10,7 @@
     #browsers
     qutebrowser
     brave
+    surf
     #gaming
     discord
     #misc
