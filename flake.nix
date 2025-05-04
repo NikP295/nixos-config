@@ -2,61 +2,37 @@
   description = "Main flake setup";
 
   inputs = {
-    # WiFi driver source (not a flake)
-    rtl8852ce = {
-      url = "github:tomasz-wisniewski/rtl8852ce";
-      flake = false;
-    };
-
-    # Nixpkgs
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-
-    # Home Manager
+    # NixOS official package source, using the nixos-24.11 branch here
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
     home-manager = {
-      url = "github:nix-community/home-manager/master";
+      url = "github:nix-community/home-manager/release-24.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, rtl8852ce, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, ... }@inputs: {
     nixosConfigurations = {
       nixos-thinkchad = nixpkgs.lib.nixosSystem {
+        specialArgs = { inherit inputs; dotfiles = ./dotfiles; };
         system = "x86_64-linux";
-        specialArgs = {
-          inherit inputs;
-          dotfiles = ./dotfiles;
-        };
 
         modules = [
           ./modules/home-import.nix
           home-manager.nixosModules.home-manager
           ./hosts/thinkchad.nix
-          ./modules/thinkchad_wifi.nix
         ];
-
-        pkgs = import nixpkgs {
-          system = "x86_64-linux";
-          overlays = [
-            (final: prev: {
-              rtl8852ce = prev.callPackage rtl8852ce { };
-            })
-          ];
-        };
       };
 
       nixos-legion = nixpkgs.lib.nixosSystem {
+        specialArgs = { inherit inputs; dotfiles = ./dotfiles; };
         system = "x86_64-linux";
-        specialArgs = {
-          inherit inputs;
-          dotfiles = ./dotfiles;
-        };
-
         modules = [
           ./modules/home-import.nix
           home-manager.nixosModules.home-manager
           ./hosts/legion.nix
         ];
       };
+        hardware.enableAllFirmware = true;
     };
   };
 }

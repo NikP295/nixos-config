@@ -65,7 +65,7 @@ c.colors.completion.item.selected.border.top = clr["bg-selected"]
 c.colors.completion.item.selected.border.bottom = clr["bg-selected"]
 
 # Foreground color of the matched text in the selected completion item.
-c.colors.completion.item.selected.match.fg = clr["persian-orange"]
+c.colors.completion.item.selected.match.fg = clr["teal_lighter"]
 
 # Foreground color of the matched text in the completion.
 c.colors.completion.match.fg = clr["gold-crayola"]
@@ -123,7 +123,7 @@ c.colors.hints.fg = clr["bg"]
 
 # Background color for hints. Note that you can use a `rgba(...)` value
 # for transparency.
-c.colors.hints.bg = clr["gold-crayola"]
+c.colors.hints.bg = clr["teal_main"]
 
 # Font color for the matched part of hints.
 c.colors.hints.match.fg = clr["fg"]

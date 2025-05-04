@@ -1,6 +1,13 @@
 config.load_autoconfig(False)
 
 config.bind('<Alt-w>', 'tab-close')
+config.bind('<Alt-h>', 'home')
+
+config.bind('<Shift-d>', 'hint images download')
+
+c.url.start_pages = ['/home/nick/.config/qutebrowser/home_page/home_page.html']
+c.url.default_page = '/home/nick/.config/qutebrowser/home_page/home_page.html'
+
 
 # Dark mode
 c.colors.webpage.darkmode.enabled = True

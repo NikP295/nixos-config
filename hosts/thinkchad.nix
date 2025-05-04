@@ -36,4 +36,3 @@
   # Wayland support
   services.xserver.enable = true;
 }
-

@@ -14,6 +14,8 @@
     discord
     #misc
     widevine-cdm
+    waydroid
+    freetube
   ];
   
     nixpkgs.overlays = [

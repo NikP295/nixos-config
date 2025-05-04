@@ -2,18 +2,18 @@
 
 {
   environment.systemPackages = with pkgs; [
-   #basic stuff 
+    #basic stuff 
     vim
     zsh
     oh-my-zsh
     neofetch
     home-manager
     git
-   #misc
-   steam
-   wine
-   winetricks
-   protontricks
+    #misc
+    steam
+    wine
+    winetricks
+    fzf
   ];
 
   networking.networkmanager.enable = true;
@@ -76,8 +76,14 @@
   };
 
 
+
+
+
+
+
+
+
   boot.loader.systemd-boot.enable = true; 
   boot.loader.efi.canTouchEfiVariables = true;
 
 }
-
