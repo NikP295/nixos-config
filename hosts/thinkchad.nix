@@ -10,6 +10,7 @@
     ../modules/programming.nix
     ../modules/system-settings.nix
     ../modules/neovim.nix
+    ../modules/virtualization.nix
   ];
  
   environment.systemPackages = with pkgs; [
