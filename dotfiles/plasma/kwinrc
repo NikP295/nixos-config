@@ -22,20 +22,33 @@ Inactive=60
 Menus=80
 MoveResize=40
 
+[NightColor]
+Mode=Constant
+NightTemperature=2900
+
 [Plugins]
 desktopchangeosdEnabled=true
+fadingpopupsEnabled=false
 krohnkiteEnabled=true
+magiclampEnabled=true
 minimizeallEnabled=true
+squashEnabled=false
+touchpointsEnabled=true
 translucencyEnabled=true
+wobblywindowsEnabled=true
 
 [Script-desktopchangeosd]
 PopupHideDelay=250
 
 [Script-krohnkite]
+enableFloatingLayout=true
+floatedWindowsLayer=2
+keepTilingOnDrag=false
 screenGapBottom=7
 screenGapLeft=7
 screenGapRight=7
 screenGapTop=7
+tileLayoutGap=4
 
 [Tiling]
 padding=4

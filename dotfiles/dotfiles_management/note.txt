@@ -1,0 +1,15 @@
+Format for the managed files list file:
+1st line are the names, which are displayed at the start (choose what to backup)
+Theyre separated by commas, no spaces, easy W
+
+Second, the format for the locations is:
+/path/to/original/location&/path/to/dotfiles/location
+
+
+The paths are separated by a & which is not something that is usually found in file paths 
+
+
+
+
+
+

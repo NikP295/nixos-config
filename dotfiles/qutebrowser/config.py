@@ -1,6 +1,7 @@
 config.load_autoconfig(False)
 
 config.bind('<Alt-w>', 'tab-close')
+
 config.bind('<Alt-h>', 'home')
 
 config.bind('<Shift-d>', 'hint images download')

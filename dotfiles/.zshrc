@@ -26,20 +26,7 @@ alias programiranje='cd ~/Documents/programiranje'
 alias nixos-git-push='/etc/nixos/scripts/push_to_git.sh'
 alias nixos-git-stage='/etc/nixos/scripts/stage_to_git.sh' # just to be able to nixos-rebuild
 
-alias nixos-copy-system='/etc/nixos/scripts/copy_system_configs.sh'
-alias nixos-override-system='/etc/nixos/scripts/override_system_configs.sh' 
-
-
-
-alias bruh='echo BruhMoment'
-
-
-alias ZYX='ZYX'
-
-
-export usb="/dev/sda/"
-
-
+alias nixos-manage-dotfiles='python /etc/nixos/dotfiles/dotfiles_management/move_files.py'
 
 
 # If you come from bash you might have to change your $PATH.

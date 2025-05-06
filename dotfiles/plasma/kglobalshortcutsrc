@@ -310,6 +310,9 @@ _launch=Meta+Return\tCtrl+Alt+T
 [services][org.kde.yakuake.desktop]
 _launch=Meta+Shift+Space
 
+[services][org.qutebrowser.qutebrowser.desktop]
+_launch=Meta+O
+
 [wacomtablet]
 Map to fullscreen=Meta+Ctrl+F,Meta+Ctrl+F,Map to fullscreen
 Map to screen 1=Meta+Ctrl+1,Meta+Ctrl+1,Map to screen 1

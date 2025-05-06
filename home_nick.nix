@@ -16,6 +16,7 @@
     widevine-cdm
     waydroid
     freetube
+    cmatrix
   ];
   
     nixpkgs.overlays = [
