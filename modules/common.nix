@@ -14,6 +14,7 @@
     wine
     winetricks
     fzf
+    sl
   ];
 
   networking.networkmanager.enable = true;
