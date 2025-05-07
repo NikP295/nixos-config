@@ -7,7 +7,7 @@ Second, the format for the locations is:
 
 
 The paths are separated by a & which is not something that is usually found in file paths 
-
+Both paths MUST include the filename, which is skipped when copying
 
 
 

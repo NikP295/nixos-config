@@ -1,11 +1,3 @@
-# SPDX-FileCopyrightText: Andrew Lake <jamboarder@gmail.com>
-# SPDX-FileCopyrightText: Marco Martin <notmart@gmail.com>
-# SPDX-FileCopyrightText: Nate Graham <nate@kde.org>
-# SPDX-FileCopyrightText: Noah Davis <noahadvs@gmail.com>
-# SPDX-FileCopyrightText: Neal Gompa <ngompa@kde.org>
-# SPDX-FileCopyrightText: David Redondo <kde@david-redondo.de>
-# SPDX-License-Identifier: LGPL-2.0-or-later
-
 [ColorEffects:Disabled]
 Color=56,56,56
 ColorAmount=0
@@ -112,7 +104,7 @@ ForegroundVisited=155,89,182
 
 [Colors:View]
 BackgroundAlternate=35,38,41
-BackgroundNormal=27,30,32
+BackgroundNormal=14,16,17
 DecorationFocus=61,174,233
 DecorationHover=61,174,233
 ForegroundActive=61,174,233
@@ -145,8 +137,8 @@ Name[ar]=نسيم داكن
 Name[az]=Breeze - Tünd
 Name[bg]=Breeze Тъмен
 Name[bs]=Breeze tamna
-Name[ca]=Brisa fosca
 Name[ca@valencia]=Brisa fosca
+Name[ca]=Brisa fosca
 Name[cs]=Breeze Tmavé
 Name[da]=Breeze Dark
 Name[de]=Breeze Dunkel
@@ -183,10 +175,10 @@ Name[ru]=Breeze, тёмный вариант
 Name[sa]=वायुः अन्धकारः
 Name[sk]=Tmavý vánok
 Name[sl]=Sapica, temna
-Name[sr]=Поветарац тамни
 Name[sr@ijekavian]=Поветарац тамни
 Name[sr@ijekavianlatin]=Povetarac tamni
 Name[sr@latin]=Povetarac tamni
+Name[sr]=Поветарац тамни
 Name[sv]=Breeze mörk
 Name[tg]=Насими торик
 Name[tr]=Esinti Koyu

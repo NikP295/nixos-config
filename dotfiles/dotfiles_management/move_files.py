@@ -15,9 +15,16 @@ def the_copying(location1, location2, backup):
 
     dest_split = destination.split("/")
     src_split = source.split("/")
+    
 
-    # from inside outwards: len - 1 = last index, which is used to determine the last chunk, then the lenght of that chunk
-    filename_length = len(dest_split[len(dest_split)-1])
+    filename = dest_split[len(dest_split)-1]
+    filename_length = len(filename)
+
+    if filename == "":
+        filename = dest_split[len(dest_split)-2]
+        filename_length = len(filename) + 1
+
+    print(f"Filename: {filename}")
     
     in_root = True 
     
@@ -31,25 +38,20 @@ def the_copying(location1, location2, backup):
         path = ""
 
 
-
     for j in range(1, len(destination) - filename_length):
         path = path + destination[j]
-
-
+    
+    #print(f"Path: {path}")
+    #print(f"Destination: {destination}")
+    
+    # making sure there are no spaces:
+    path = path.replace(" ", "")
+    source = source.replace(" ", "")
 
     if in_root:
-        subprocess.run(["sudo", "mkdir", "-p", path], capture_output=True, text=True)
+        result = subprocess.run(["sudo", "mkdir", "-p", path], capture_output=True, text=True)
     else:
-        subprocess.run(["mkdir", "-p", path], capture_output=True, text=True)
-
-
-    if in_root:
-        result = subprocess.run(["sudo", "cp", "-rf", source, destination], capture_output=True, text=True)
-    
-    else:    
-        result = subprocess.run(["cp", "-rf", source, destination], capture_output=True, text=True)
-    
-    print(f"copied: {source} to {destination}")
+        result = subprocess.run(["mkdir", "-p", path], capture_output=True, text=True)
 
     if result.returncode != 0:
         print("Error:", result.stderr)
@@ -57,8 +59,19 @@ def the_copying(location1, location2, backup):
         pass
         #print("W:", result.stdout)
 
-    #print(f"This would: c(o)p(y) {source} {destination}")
+    if in_root:
+        result = subprocess.run(["sudo", "cp", "-rf", source, path], capture_output=True, text=True)
+    
+    else:
+        result = subprocess.run(["cp", "-rf", source, path], capture_output=True, text=True)
+    
+    print(f"copied: {source} to {path}")
 
+    if result.returncode != 0:
+        print("Error:", result.stderr)
+    else:
+        pass
+        #print("W:", result.stdout)
 
 
 def get_instructions(copyable_files):
@@ -98,7 +111,6 @@ def get_instructions(copyable_files):
 
 with open(paths_file, "r") as f:
     lines = f.readlines()
-    #print(len(lines))
 
 for i in range(0, len(lines)):
     
@@ -115,8 +127,6 @@ for i in range(0, len(lines)):
         lct1_lct2.clear()
     
     else:
-        #print("Skipped a line" + str(i))
         pass
-
 
 
