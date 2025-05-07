@@ -4,7 +4,7 @@ import os
 paths_file = "/etc/nixos/dotfiles/dotfiles_management/managed_files_list.txt"
 
 
-def the_copying(location1, location2, backup):
+def the_copying(location1, location2, backup, debug_mode_boone):
     if backup:
         source = location1
         destination = location2
@@ -23,9 +23,11 @@ def the_copying(location1, location2, backup):
     if filename == "":
         filename = dest_split[len(dest_split)-2]
         filename_length = len(filename) + 1
-
-    print(f"Filename: {filename}")
     
+    if debug_mode_boone:
+        print(f"Filename: {filename}")
+   
+
     in_root = True 
     
     if "home" in dest_split or "home" in src_split:
@@ -65,13 +67,17 @@ def the_copying(location1, location2, backup):
     else:
         result = subprocess.run(["cp", "-rf", source, path], capture_output=True, text=True)
     
-    print(f"copied: {source} to {path}")
+    if debug_mode_boone:
+        print(f"Copying: {source} to {path}")
+
 
     if result.returncode != 0:
         print("Error:", result.stderr)
     else:
-        pass
-        #print("W:", result.stdout)
+        if debug_mode_boone:
+            print("Big W!")
+        else:
+            pass
 
 
 def get_instructions(copyable_files):
@@ -105,8 +111,14 @@ def get_instructions(copyable_files):
                 relevant_items.append(int(j) - 1)
             except:
                 pass
-    
-    return (backup, relevant_items)
+    answer = input("Do you want to enable debug mode? Yes = 1, No = 2 (default): ")
+    if answer == 2 or answer == "":
+        debug_mode = False
+    else:
+        debug_mode = True
+
+
+    return (backup, relevant_items, debug_mode)
 
 
 with open(paths_file, "r") as f:
@@ -123,7 +135,7 @@ for i in range(0, len(lines)):
 
     if i-1 in instructions[1]:
         lct1_lct2 = line.split("&")
-        the_copying(lct1_lct2[0], lct1_lct2[1], instructions[0])
+        the_copying(lct1_lct2[0], lct1_lct2[1], instructions[0], instructions[2])
         lct1_lct2.clear()
     
     else:
