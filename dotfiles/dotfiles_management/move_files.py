@@ -70,7 +70,7 @@ def the_copying(location1, location2, backup, debug_mode_boone):
     if debug_mode_boone:
         print(f"Copying: {source} to {path}")
 
-
+    
     if result.returncode != 0:
         print("Error:", result.stderr)
     else:
@@ -78,7 +78,7 @@ def the_copying(location1, location2, backup, debug_mode_boone):
             print("Big W!")
         else:
             pass
-
+    
 
 def get_instructions(copyable_files):
     answer = input("Copy from system 1 (Default), override system configs 2: ")
@@ -108,7 +108,7 @@ def get_instructions(copyable_files):
         
         for j in relevant_items_str:
             try:
-                relevant_items.append(int(j) - 1)
+                relevant_items.append(int(j))
             except:
                 pass
     answer = input("Do you want to enable debug mode? Yes = 1, No = 2 (default): ")
@@ -133,7 +133,7 @@ for i in range(0, len(lines)):
         print(instructions)
         continue
 
-    if i-1 in instructions[1]:
+    if i in instructions[1]:
         lct1_lct2 = line.split("&")
         the_copying(lct1_lct2[0], lct1_lct2[1], instructions[0], instructions[2])
         lct1_lct2.clear()

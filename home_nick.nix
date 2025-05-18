@@ -12,6 +12,7 @@
     brave
     #gaming
     discord
+    discord-screenaudio
     #misc
     widevine-cdm
     waydroid
