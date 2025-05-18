@@ -100,7 +100,7 @@ def get_instructions(copyable_files):
     relevant_items = []
     
     if answer == "":
-        for i in range(0, len(list_format_files)):
+        for i in range(0, len(list_format_files) + 1):
             relevant_items.append(i)
     
     else:
