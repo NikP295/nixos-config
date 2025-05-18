@@ -15,6 +15,7 @@
     winetricks
     fzf
     sl
+    vlc
   ];
 
   networking.networkmanager.enable = true;

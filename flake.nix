@@ -12,10 +12,10 @@
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: {
     nixosConfigurations = {
+
       nixos-thinkchad = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; dotfiles = ./dotfiles; };
         system = "x86_64-linux";
-
         modules = [
           ./modules/home-import.nix
           home-manager.nixosModules.home-manager
@@ -32,7 +32,19 @@
           ./hosts/legion.nix
         ];
       };
-        hardware.enableAllFirmware = true;
+
+      nixos-thinkold = nixpkgs.lib.nixosSystem {
+        specialArgs = { inherit inputs; dotfiles = ./dotfiles; };
+        system = "x86_64-linux";
+        modules = [
+          ./modules/home-import.nix
+          home-manager.nixosModules.home-manager
+          ./hosts/thinkold.nix
+        ];
+      };
+
+
+      hardware.enableAllFirmware = true;
     };
   };
 }

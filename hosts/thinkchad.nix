@@ -7,6 +7,7 @@
     ../hardware/thinkchad-hw.nix
     ../modules/common.nix
     ../modules/plasma/plasma.nix
+    ../modules/hyprland/hyprland.nix
     ../modules/programming.nix
     ../modules/system-settings.nix
     ../modules/neovim.nix
