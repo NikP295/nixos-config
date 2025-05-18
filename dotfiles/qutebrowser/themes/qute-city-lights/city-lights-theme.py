@@ -21,11 +21,11 @@ clr = {
     "maroon-x11": "#b62d65", # violet
     "e&lectric-blue": "#70E1E8", # cyan (extra)
     "midnight-green-eagle": "#114B5F", # unused (extra)
-    "teal_main": "#1A7F73",
-    "teal_lighter": "#2B9E87",
-    "teal_darker": "#145E50",
-    "teal_muted": "#4E8D7B",
-    "teal_vibrant": "#1A9D80",
+    "color_main": "#1A7F73",
+    "color_lighter": "#2B9E87",
+    "color_darker": "#145E50",
+    "color_muted": "#4E8D7B",
+    "color_vibrant": "#1A9D80",
 }
 
 ## COMPLETION
@@ -41,7 +41,7 @@ c.colors.completion.odd.bg = clr["bg-alt"]
 c.colors.completion.even.bg = clr["bg"]
 
 # Foreground color of completion widget category headers.
-c.colors.completion.category.fg = clr["teal_main"]
+c.colors.completion.category.fg = clr["color_main"]
 
 # Background color of the completion widget category headers.
 c.colors.completion.category.bg = clr["bg-alt"]
@@ -53,7 +53,7 @@ c.colors.completion.category.border.top = clr["smoky-black"]
 c.colors.completion.category.border.bottom = clr["smoky-black"]
 
 # Foreground color of the selected completion item.
-c.colors.completion.item.selected.fg = clr["teal_lighter"]
+c.colors.completion.item.selected.fg = clr["color_lighter"]
 
 # Background color of the selected completion item.
 c.colors.completion.item.selected.bg = clr["bg-selected"]
@@ -65,7 +65,7 @@ c.colors.completion.item.selected.border.top = clr["bg-selected"]
 c.colors.completion.item.selected.border.bottom = clr["bg-selected"]
 
 # Foreground color of the matched text in the selected completion item.
-c.colors.completion.item.selected.match.fg = clr["teal_lighter"]
+c.colors.completion.item.selected.match.fg = clr["color_lighter"]
 
 # Foreground color of the matched text in the completion.
 c.colors.completion.match.fg = clr["gold-crayola"]
@@ -105,13 +105,13 @@ c.colors.downloads.bar.bg = clr["bg"]
 c.colors.downloads.start.fg = clr["bg"]
 
 # Color gradient start for download backgrounds.
-c.colors.downloads.start.bg = clr["teal_main"]
+c.colors.downloads.start.bg = clr["color_main"]
 
 # Color gradient end for download text.
 c.colors.downloads.stop.fg = clr["bg"]
 
 # Color gradient stop for download backgrounds.
-c.colors.downloads.stop.bg = clr["teal_darker"]
+c.colors.downloads.stop.bg = clr["color_darker"]
 
 # Foreground color for downloads with errors.
 c.colors.downloads.error.fg = clr["paradise-pink"]
@@ -123,7 +123,7 @@ c.colors.hints.fg = clr["bg"]
 
 # Background color for hints. Note that you can use a `rgba(...)` value
 # for transparency.
-c.colors.hints.bg = clr["teal_main"]
+c.colors.hints.bg = clr["color_main"]
 
 # Font color for the matched part of hints.
 c.colors.hints.match.fg = clr["fg"]
@@ -158,13 +158,13 @@ c.colors.messages.warning.bg = clr["bg"]
 c.colors.messages.warning.border = clr["persian-orange"]
 
 # Foreground color of an info message.
-c.colors.messages.info.fg = clr["teal_lighter"]
+c.colors.messages.info.fg = clr["color_lighter"]
 
 # Background color of an info message.
 c.colors.messages.info.bg = clr["bg"]
 
 # Border color of an info message.
-c.colors.messages.info.border = clr["teal_lighter"]
+c.colors.messages.info.border = clr["color_lighter"]
 
 ## PROMPTS
 
@@ -195,13 +195,13 @@ c.colors.statusbar.normal.bg = clr["bg"]
 c.colors.statusbar.insert.fg = clr["bg"]
 
 # Background color of the statusbar in insert mode.
-c.colors.statusbar.insert.bg = clr["teal_main"]
+c.colors.statusbar.insert.bg = clr["color_main"]
 
 # Foreground color of the statusbar in passthrough mode.
 c.colors.statusbar.passthrough.fg = clr["bg"]
 
 # Background color of the statusbar in passthrough mode.
-c.colors.statusbar.passthrough.bg = clr["teal_darker"]
+c.colors.statusbar.passthrough.bg = clr["color_darker"]
 
 # Foreground color of the statusbar in private browsing mode.
 c.colors.statusbar.private.fg = clr["bg"]
@@ -231,10 +231,10 @@ c.colors.statusbar.caret.bg = clr["maroon-x11"]
 c.colors.statusbar.caret.selection.fg = clr["bg"]
 
 # Background color of the statusbar in caret mode with a selection.
-c.colors.statusbar.caret.selection.bg = clr["teal_main"]
+c.colors.statusbar.caret.selection.bg = clr["color_main"]
 
 # Background color of the progress bar.
-c.colors.statusbar.progress.bg = clr["teal_main"]
+c.colors.statusbar.progress.bg = clr["color_main"]
 
 # Default foreground color of the URL in the statusbar.
 c.colors.statusbar.url.fg = clr["fg"]
@@ -243,7 +243,7 @@ c.colors.statusbar.url.fg = clr["fg"]
 c.colors.statusbar.url.error.fg = clr["paradise-pink"]
 
 # Foreground color of the URL in the statusbar for hovered links.
-c.colors.statusbar.url.hover.fg = clr["teal_lighter"] # ex. cadet blue crayola
+c.colors.statusbar.url.hover.fg = clr["color_lighter"] # ex. cadet blue crayola
 
 # Foreground color of the URL in the statusbar on successful load
 # (http).
@@ -262,10 +262,10 @@ c.colors.statusbar.url.warn.fg = clr["shimmering-blush"]
 c.colors.tabs.bar.bg = clr["bg"]
 
 # Color gradient start for the tab indicator.
-c.colors.tabs.indicator.start = clr["teal_main"]
+c.colors.tabs.indicator.start = clr["color_main"]
 
 # Color gradient end for the tab indicator.
-c.colors.tabs.indicator.stop = clr["teal_darker"]
+c.colors.tabs.indicator.stop = clr["color_darker"]
 
 # Color for the tab indicator on errors.
 c.colors.tabs.indicator.error = clr["paradise-pink"]
