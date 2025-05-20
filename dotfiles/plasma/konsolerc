@@ -1,7 +1,13 @@
+MenuBar=Disabled
+
+[Desktop Entry]
+DefaultProfile=Basic_proifle.profile
+
 [General]
 ConfigVersion=1
 
 [MainWindow]
+MenuBar=Disabled
 ToolBarsMovable=Disabled
 
 [Notification Messages]

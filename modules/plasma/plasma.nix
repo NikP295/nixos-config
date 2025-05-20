@@ -24,7 +24,7 @@
      
       pkgs.kdePackages.plasma-browser-integration
       pkgs.kdePackages.yakuake
-
+      pkgs.kdePackages.plasma-vault     pkgs.kdePackages.plasma-vault
 
   ];
 
@@ -48,12 +48,6 @@
   # Sound with PipeWire
   hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-  };
 
   # Restart SDDM if it crashes after sleep
   systemd.services.sddm.serviceConfig.Restart = "always";

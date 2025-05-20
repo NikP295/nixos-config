@@ -2,20 +2,25 @@
 
 {
   environment.systemPackages = with pkgs; [
-    #basic stuff 
+    # basic stuff 
     vim
     zsh
     oh-my-zsh
     neofetch
     home-manager
     git
-    #misc
+    # audio/video
+    vlc
+    easyeffects
+    qpwgraph
+    # gaming
     steam
     wine
     winetricks
+    # misc
     fzf
     sl
-    vlc
+    htop
   ];
 
   networking.networkmanager.enable = true;
@@ -79,7 +84,13 @@
 
 
 
-
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
+    jack.enable = true;
+  };
 
 
 
