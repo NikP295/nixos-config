@@ -11,6 +11,7 @@
     ../modules/programming.nix
     ../modules/system-settings.nix
     ../modules/neovim.nix
+    ../modules/CS.nix
     ../modules/virtualization.nix
   ];
  
