@@ -304,6 +304,21 @@ toggle do not disturb=none,,Toggle do not disturb
 [services][codium-wayland.desktop]
 _launch=Favorites
 
+[services][net.local.python-2.desktop]
+_launch=Meta+Ctrl+Alt+Num+2
+
+[services][net.local.python-3.desktop]
+_launch=Meta+Ctrl+Alt+Num+3
+
+[services][net.local.python-4.desktop]
+_launch=Meta+Ctrl+Alt+Num+4
+
+[services][net.local.python-5.desktop]
+_launch=Meta+Ctrl+Alt+Num+5
+
+[services][net.local.python.desktop]
+_launch=Meta+Ctrl+Alt+Num+1
+
 [services][org.kde.konsole.desktop]
 _launch=Meta+Return\tCtrl+Alt+T
 
