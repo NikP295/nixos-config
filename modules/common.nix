@@ -21,6 +21,7 @@
     fzf
     sl
     htop
+    p7zip
   ];
 
   networking.networkmanager.enable = true;

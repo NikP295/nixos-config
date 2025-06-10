@@ -8,7 +8,6 @@ ConfigVersion=1
 
 [MainWindow]
 MenuBar=Disabled
-ToolBarsMovable=Disabled
 
 [Notification Messages]
 CloseAllEmptyTabs=true

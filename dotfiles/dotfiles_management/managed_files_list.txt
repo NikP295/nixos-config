@@ -1,4 +1,4 @@
-color-schemes,kglobalshortcutsrc,plasmashellrc,kwinrc,konsolerc,kwinoutputconfig,backgrounds,sddm_background,.oh-my-zsh,qutebrowser-config,qutebrowser-themes,nvim
+color-schemes,kglobalshortcutsrc,plasmashellrc,kwinrc,konsolerc,kwinoutputconfig,backgrounds,sddm_background,.oh-my-zsh,qutebrowser-config,qutebrowser-themes,nvim,powerscripts
 /home/nick/.local/share/color-schemes&/etc/nixos/dotfiles/plasma/color-schemes/
 /home/nick/.config/kglobalshortcutsrc&/etc/nixos/dotfiles/plasma/kglobalshortcutsrc
 /home/nick/.config/plasmashellrc&/etc/nixos/dotfiles/plasma/plasmashellrc
@@ -11,3 +11,4 @@ color-schemes,kglobalshortcutsrc,plasmashellrc,kwinrc,konsolerc,kwinoutputconfig
 /home/nick/.config/qutebrowser/config.py&/etc/nixos/dotfiles/qutebrowser/config.py
 /home/nick/.config/qutebrowser/themes&/etc/nixos/dotfiles/qutebrowser/themes/
 /home/nick/.config/nvim/&/etc/nixos/dotfiles/nvim/
+/home/nick/powerscripts/&/etc/nixos/dotfiles/scripts/powerscripts/

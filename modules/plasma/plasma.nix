@@ -24,8 +24,9 @@
      
       pkgs.kdePackages.plasma-browser-integration
       pkgs.kdePackages.yakuake
-      pkgs.kdePackages.plasma-vault     pkgs.kdePackages.plasma-vault
-
+      pkgs.kdePackages.plasma-vault    
+      pkgs.kdePackages.partitionmanager
+      pkgs.kdePackages.ktorrent
   ];
 
   #environment.etc."sddm_background.png".source = /home/nick/Pictures/backgrounds/cyberpunk_city.png;
@@ -46,7 +47,7 @@
   # services.xserver.libinput.enable = true;
 
   # Sound with PipeWire
-  hardware.pulseaudio.enable = false;
+  services.pulseaudio.enable = false;
   security.rtkit.enable = true;
 
   # Restart SDDM if it crashes after sleep

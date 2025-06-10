@@ -9,6 +9,12 @@
     gcc
     gdb
     clang
+    python312Packages.pip
+    python312Packages.setuptools
+    pkgs.python3.pkgs.requests
+
+
+
 
   ];
 

@@ -12,12 +12,12 @@
     brave
     #gaming
     discord
-    discord-screenaudio
     #misc
     widevine-cdm
     waydroid
     freetube
     cmatrix
+    gimp
   ];
   
     nixpkgs.overlays = [
@@ -33,6 +33,6 @@
   home.file.".config/neofetch/config.conf".source = ./dotfiles/neofetch.conf;
 
 
-  home.stateVersion = "24.11";
+  home.stateVersion = "25.05";
 }
 

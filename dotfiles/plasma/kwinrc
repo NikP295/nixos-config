@@ -1,5 +1,5 @@
 [Activities][LastVirtualDesktop]
-087dad81-17af-41fe-9818-e11f8307270e=7a3531b3-9d22-4514-9b4c-4829d9a5dfb9
+087dad81-17af-41fe-9818-e11f8307270e=e555a118-730b-4943-b736-2d53b386f452
 
 [Desktops]
 Id_1=7a3531b3-9d22-4514-9b4c-4829d9a5dfb9
@@ -54,6 +54,9 @@ tileLayoutGap=4
 padding=4
 
 [Tiling][27b8a485-dede-5bbb-9bd0-0cfc52449f58]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][c73684f0-83c4-5586-b5c5-86ac66d58d6c]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][ec8ae6e5-1716-534c-b4ed-3aa821077486]
