@@ -27,6 +27,7 @@
       pkgs.kdePackages.plasma-vault    
       pkgs.kdePackages.partitionmanager
       pkgs.kdePackages.ktorrent
+      pkgs.kdePackages.plasma-workspace
   ];
 
   #environment.etc."sddm_background.png".source = /home/nick/Pictures/backgrounds/cyberpunk_city.png;
