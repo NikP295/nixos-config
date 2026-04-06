@@ -35,7 +35,7 @@ if __name__ == "__main__":
         print("Bruh.")
         quit()
 else:
-    print("powerscripts not the main file!")
+    print("powerscripts is not the main file!")
     quit()
 
 

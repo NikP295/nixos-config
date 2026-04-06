@@ -1,10 +1,13 @@
 MenuBar=Disabled
 
 [Desktop Entry]
-DefaultProfile=Basic_proifle.profile
+DefaultProfile=Main profile.profile
 
 [General]
 ConfigVersion=1
+
+[KonsoleWindow]
+RemoveWindowTitleBarAndFrame=true
 
 [MainWindow]
 MenuBar=Disabled
@@ -12,6 +15,11 @@ MenuBar=Disabled
 [Notification Messages]
 CloseAllEmptyTabs=true
 CloseAllTabs=true
+
+[TabBar]
+NewTabBehavior=PutNewTabAfterCurrentTab
+SearchTabsButton=HideSearchTabsButton
+TabBarVisibility=AlwaysShowTabBar
 
 [UiSettings]
 ColorScheme=

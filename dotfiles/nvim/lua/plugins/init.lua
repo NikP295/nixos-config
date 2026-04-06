@@ -1,11 +1,9 @@
 return {
   {
     "stevearc/conform.nvim",
-    -- event = 'BufWritePre', -- uncomment for format on save
     opts = require "configs.conform",
   },
 
-  -- These are some examples, uncomment them if you want to see them work!
   {
     "neovim/nvim-lspconfig",
     config = function()
@@ -20,7 +18,7 @@ return {
     priority = 1000,
     config = function()
       require("tokyonight").setup({
-        style = "night", -- "storm", "night", "moon", "day"
+        style = "night",
         transparent = false,
         styles = {
           comments = { italic = true },
@@ -40,19 +38,13 @@ return {
     config = function()
       require("telescope").setup()
     end,
-  }
+  },
 
-
-  -- test new blink
-  -- { import = "nvchad.blink.lazyspec" },
-
-  -- {
-  -- 	"nvim-treesitter/nvim-treesitter",
-  -- 	opts = {
-  -- 		ensure_installed = {
-  -- 			"vim", "lua", "vimdoc",
-  --      "html", "css"
-  -- 		},
-  -- 	},
-  -- },
+  {
+    "hrsh7th/nvim-cmp",
+    opts = function(_, config)
+      local cmp_custom = require("configs.cmp")
+      return cmp_custom.override(config)
+    end,
+  },
 }

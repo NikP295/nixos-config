@@ -1,0 +1,62 @@
+:root {
+  --main-color: #09b18a;
+
+  --background-color: "#231f23";
+  --gray-color: "#404347";
+
+  --brighter-color: "#41f0c7";
+  --darker-color: "#0b6a55";
+}
+
+window {
+margin: 0px;
+border: 1px solid #41f0c7;
+background-color: #231f23;
+}
+
+#input {
+margin: 5px;
+border: none;
+color: #09b18a;
+background-color: #404347;
+}
+
+#inner-box {
+margin: 5px;
+border: none;
+background-color: #231f23;
+}
+
+#outer-box {
+margin: 5px;
+border: none;
+background-color: #231f23;
+}
+
+#scroll {
+margin: 0px;
+border: none;
+}
+
+#text {
+margin: 5px;
+border: none;
+color: #0b6a55;
+} 
+
+#entry.activatable #text {
+color: #41f0c7;
+}
+
+#entry > * {
+color: #41f0c7;
+}
+
+#entry:selected {
+background-color: #404347;
+}
+
+#entry:selected #text {
+color: #09b18a;
+font-weight: bold;
+}

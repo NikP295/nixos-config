@@ -6,6 +6,7 @@
     ripgrep
     fd
     wl-clipboard
+    cmatrix
 
   ];
 

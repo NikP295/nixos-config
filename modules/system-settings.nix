@@ -3,7 +3,7 @@
 
 {
   # Set the stateVersion here.
-  config.system.stateVersion = "25.05";
+  config.system.stateVersion = "25.11";
   
   # Auto upgrades (updates)
   config.system.autoUpgrade.enable = true;
@@ -12,7 +12,7 @@
   # Cleanup
   config.nix.gc.automatic = true;
   config.nix.gc.dates = "daily";
-  config.nix.gc.options = "--delete-older-than 10d";
+  config.nix.gc.options = "--delete-older-than 30d";
   config.nix.settings.auto-optimise-store = true;
 }
 

@@ -9,19 +9,12 @@
     neofetch
     home-manager
     git
-    # audio/video
-    vlc
-    easyeffects
-    qpwgraph
-    # gaming
-    steam
-    wine
-    winetricks
-    # misc
-    fzf
-    sl
     htop
     p7zip
+    exfat
+    gptfdisk
+    lshw
+    usbutils
   ];
 
   networking.networkmanager.enable = true;
@@ -49,23 +42,18 @@
   users.users.nick = {
     isNormalUser = true;
     description = "Nick";
-    extraGroups = [ "networkmanager" "wheel" "nick" ];
+    extraGroups = [ "networkmanager" "wheel" "dialout" "nick" ];
     packages = with pkgs; [
       kdePackages.kate
     ];
     shell = pkgs.zsh;
   };
   
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
   system.activationScripts.fixEtcNixosOwnership.text = ''
     chown -R nick:nick /etc/nixos
   '';
-
-
-
-
-  
-  # Apps
-  #programs.firefox.enable = true;
   
   programs.zsh = {
   enable = true;
@@ -76,15 +64,6 @@
     };
   };
 
-  programs.steam = {
-    enable = true;
-    remotePlay.openFirewall = true;
-    dedicatedServer.openFirewall = true;
-    localNetworkGameTransfers.openFirewall = true;
-  };
-
-
-
   services.pipewire = {
     enable = true;
     alsa.enable = true;
@@ -93,11 +72,6 @@
     jack.enable = true;
   };
 
-
-
-
-
   boot.loader.systemd-boot.enable = true; 
   boot.loader.efi.canTouchEfiVariables = true;
-
 }

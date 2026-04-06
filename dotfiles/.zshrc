@@ -2,8 +2,6 @@ neofetch
 
 alias cm='cmatrix -C cyan -u 7 -B'
 
-alias windows='windows.sh'
-
 alias unmount-vault='sudo umount /mnt/VaultOfStuff'
 alias umount-vault='sudo umount /mnt/VaultOfStuff'
 alias lock-vault='sudo umount /mnt/VaultOfStuff'
@@ -21,25 +19,21 @@ alias python-start='source /home/nick/.espressif/python_env/idf5.5_py3.13_env/bi
 alias programiranje='cd ~/Documents/programiranje'
 alias programiranje-ESP='cd ~/Documents/programiranje/ESP/; python-start'
 alias programiranje-Python='cd ~/Documents/programiranje/Python/; python-start'
-alias programiranje='cd ~/Documents/programiranje'
+alias programiranje-c='cd ~/Documents/programiranje/C/'
+alias programiranje-C='cd ~/Documents/programiranje/C/'
 
 alias nixos-git-push='/etc/nixos/scripts/push_to_git.sh'
 alias nixos-git-stage='/etc/nixos/scripts/stage_to_git.sh' # just to be able to nixos-rebuild
 
 alias nixos-manage-dotfiles='python /etc/nixos/dotfiles/dotfiles_management/move_files.py'
 
-
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
-
+# testing!!1
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-export PATH=$PATH:</home/nick/Documents/programiranje/actual_programi/>
-# Set name of the theme to load --- if set to "random", it will
+#export PATH=$PATH:</home/nick/Documents/programiranje/actual_programi/>
 # load a random theme each time Oh My Zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="fino"
+#ZSH_THEME="fino"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load

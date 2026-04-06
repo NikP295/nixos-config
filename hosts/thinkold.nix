@@ -2,13 +2,20 @@
 
   imports = [
     ../hardware/thinkold-hw.nix
+    ../modules/system-settings.nix
+
     ../modules/common.nix
     ../modules/plasma/plasma.nix
     ../modules/hyprland/hyprland.nix
+
+    ../modules/gaming.nix
+    ../modules/internet_apps.nix
     ../modules/programming.nix
-    ../modules/system-settings.nix
+    ../modules/CS.nix
     ../modules/neovim.nix
-    #../modules/virtualization.nix
+    ../modules/office.nix
+
+    ../modules/misc_programs.nix
   ];
 
   nixpkgs.config.allowUnfree = true;
@@ -20,7 +27,6 @@
     mesa
     vulkan-loader
     libvdpau-va-gl
-    vaapiIntel  # Optional for video decoding
   ];
 
   # Use Intel graphics by default
