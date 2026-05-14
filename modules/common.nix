@@ -42,17 +42,20 @@
   users.users.nick = {
     isNormalUser = true;
     description = "Nick";
-    extraGroups = [ "networkmanager" "wheel" "dialout" "nick" ];
+    extraGroups = [ "networkmanager" "wheel" "dialout" "nick" "input" ];
     packages = with pkgs; [
       kdePackages.kate
     ];
     shell = pkgs.zsh;
   };
+
+  hardware.uinput.enable = true;
   
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   system.activationScripts.fixEtcNixosOwnership.text = ''
     chown -R nick:nick /etc/nixos
+    chown -R nick:nick /dev/uinput
   '';
   
   programs.zsh = {

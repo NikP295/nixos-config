@@ -27,7 +27,7 @@ alias nixos-git-stage='/etc/nixos/scripts/stage_to_git.sh' # just to be able to 
 
 alias nixos-manage-dotfiles='python /etc/nixos/dotfiles/dotfiles_management/move_files.py'
 
-# testing!!1
+
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 #export PATH=$PATH:</home/nick/Documents/programiranje/actual_programi/>
