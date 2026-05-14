@@ -7,5 +7,15 @@
   virtualisation.virtualbox.host.enableExtensionPack = true;
 
   # Add yourself to the vboxusers group
-  users.users.nick.extraGroups = [ "vboxusers" ];
+  users.users.nick.extraGroups = [ "vboxusers" "libvirtd"  ];
+
+
+  # KVM
+
+  programs.virt-manager.enable = true;
+
+  virtualisation.libvirtd.enable = true;
+
+  virtualisation.spiceUSBRedirection.enable = true;
+
 }

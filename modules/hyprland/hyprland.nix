@@ -22,14 +22,15 @@
     pamixer
     networkmanagerapplet
     pavucontrol
-    gnome-keyring
     kdePackages.polkit-kde-agent-1
     pkgs.kdePackages.konsole
     xdg-desktop-portal
     pkgs.xdg-desktop-portal-hyprland
-    quickshell
     wofi
     mako
+
+    ashell
+    quickshell
 
   ];
 

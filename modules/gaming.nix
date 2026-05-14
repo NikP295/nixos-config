@@ -6,6 +6,7 @@
     wineWowPackages.stagingFull
     winetricks
     protontricks
+    protonplus
     vinegar
     prismlauncher
     dosbox
@@ -14,7 +15,7 @@
     daggerfall-unity
 
   ];
-
+  
   programs.steam = {
     enable = true;
     remotePlay.openFirewall = true;
@@ -22,5 +23,14 @@
     localNetworkGameTransfers.openFirewall = true; 
     
   };
+
+  boot.blacklistedKernelModules = [ "xpad" ];
+  boot.extraModulePackages = [ pkgs.linuxPackages.xone ];
+  boot.kernelModules = [ "xone-dongle" ];
+
+  boot.kernelParams = [ "usbcore.autosuspend=-1" ];
+
+  # iso mounting
+  programs.cdemu.enable = true;
 
 }

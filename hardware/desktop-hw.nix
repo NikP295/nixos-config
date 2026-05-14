@@ -21,7 +21,6 @@
   fileSystems."/home/nick/SATA_ssd" =
     { device = "/dev/disk/by-uuid/78c6a50a-385f-44bd-86e8-2f7b29955b7a";
       fsType = "ext4";
-      options = [ "nofail" ];
     };
 
   fileSystems."/boot" =
