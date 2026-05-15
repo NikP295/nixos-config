@@ -1,6 +1,8 @@
 git -C /etc/nixos add /etc/nixos/
 
-git -C /etc/nixos commit -m "Commit timestamp: $(date)"
+current_time=$(date)
+
+git -C /etc/nixos commit -m "Commit timestamp: $current_time"
 
 git -C /etc/nixos push -u origin main
 
