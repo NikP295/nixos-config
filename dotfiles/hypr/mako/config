@@ -1,0 +1,12 @@
+background-color=#231f23
+text-color=#09b18a
+border-color= #41f0c7
+border-size=2
+border-radius=10
+padding=10
+margin=12
+width=320
+default-timeout=4000
+
+[urgency=high]
+background-color=#ff5f5f
