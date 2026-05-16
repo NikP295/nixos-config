@@ -6,7 +6,7 @@
 
     ../modules/common.nix
     ../modules/plasma/plasma.nix
-    ../modules/hyprland/hyprland.nix
+    ../modules/hyprland/hyprland_thinkold.nix
 
     ../modules/gaming.nix
     ../modules/internet_apps.nix
