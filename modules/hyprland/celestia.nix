@@ -1,13 +1,8 @@
 { config, pkgs, ... }:
 
 {
-  inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    
-    caelestia-shell = {
-      url = "github:caelestia-dots/shell";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-  };
+  environment.systemPackages = [
+    inputs.caelestia-shell.packages.x86_64-linux.with-cli
+  ];  
 }
 
