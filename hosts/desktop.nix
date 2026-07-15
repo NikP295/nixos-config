@@ -29,7 +29,7 @@
   networking.hostName = "nixos-desktop";
   networking.firewall.enable = true;
 
-  boot.kernelModules = [ "amdgpu" ];
+  boot.kernelModules = [ "amdgpu" "ntsync" ];
   hardware.cpu.intel.updateMicrocode = true;
 
   hardware.graphics = {

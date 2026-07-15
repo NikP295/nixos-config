@@ -22,6 +22,7 @@
     unrar
     kdePackages.yakuake
     astroterm
+    gocryptfs
 
   ];
 

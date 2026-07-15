@@ -9,6 +9,7 @@
     firefox
     #gaming
     discord
+    vesktop
     #misc
     widevine-cdm
     freetube

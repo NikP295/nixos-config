@@ -15,6 +15,7 @@
     hypridle
     hyprlock
     hyprnotify
+    hyprshot
     
     wl-clipboard
     grim

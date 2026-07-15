@@ -5,6 +5,7 @@
     platformio
     python314
     rustc
+    rustup
     cargo
     gcc
     gdb
@@ -43,4 +44,10 @@
     vulkan-loader
     mesa
   ];
+
+
+  programs.appimage = {
+    enable = true;
+    binfmt = true;
+  };
 }
