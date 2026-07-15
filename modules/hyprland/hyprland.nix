@@ -1,6 +1,9 @@
 { config, pkgs, ... }:
 
 {
+  imports = [
+    ./celestia.nix
+  ];
   programs.hyprland.enable = true; # enable Hyprland
   
 
@@ -12,6 +15,7 @@
     hypridle
     hyprlock
     hyprnotify
+    hyprshot
     
     wl-clipboard
     grim
