@@ -6,7 +6,7 @@
 
     ../modules/common.nix
     ../modules/plasma/plasma.nix
-    ../modules/hyprland/hyprland_thinkold.nix
+    ../modules/hyprland/hyprland.nix
 
     ../modules/gaming.nix
     ../modules/internet_apps.nix
@@ -27,7 +27,16 @@
     mesa
     vulkan-loader
     libvdpau-va-gl
+    libfprint
+    fprintd
   ];
+
+  # fingerprint unlock
+  services.fprintd.enable = true;
+
+  #services.fprintd.tod.enable = true;
+
+  #services.fprintd.tod.driver = pkgs.libfprint-2-tod1-vfs0090;
 
   # Use Intel graphics by default
   services.xserver.videoDrivers = [ "intel" "modesetting" ];
