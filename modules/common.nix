@@ -17,14 +17,18 @@
     usbutils
   ];
 
-  systemd.user.services.gitanje_pull = {
-    description = "Pull latest nixos config";
+  systemd.services.gitanje-pull = {
+    description = "Gitanje pull newest nixos config";
 
-    wantedBy = [ "default.target" ];
+    wantedBy = [ "multi-user.target" ];
+    after = [ "network-online.target" ];
+    wants = [ "network-online.target" ];
 
     serviceConfig = {
       Type = "oneshot";
-      ExecStart = "/etc/nixos/git_management/gitanje pull";
+      User = "nick";
+      WorkingDirectory = "/etc/nixos/dotfiles/dotfile_management";
+      ExecStart = "/etc/nixos/dotfiles/dotfile_management/gitanje pull";
     };
   };
 
