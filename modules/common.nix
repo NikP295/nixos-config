@@ -17,6 +17,17 @@
     usbutils
   ];
 
+  systemd.user.services.gitanje_pull = {
+    description = "Pull latest nixos config";
+
+    wantedBy = [ "default.target" ];
+
+    serviceConfig = {
+      Type = "oneshot";
+      ExecStart = "/etc/nixos/git_management/gitanje pull";
+    };
+  };
+
   networking.networkmanager.enable = true;
 
   time.timeZone = "Europe/Ljubljana";
