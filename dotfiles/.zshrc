@@ -1,5 +1,6 @@
 neofetch
 
+
 alias cm='cmatrix -C cyan -u 7 -B'
 
 alias unmount-vault='sudo umount /mnt/VaultOfStuff'
@@ -22,14 +23,21 @@ alias programiranje-Python='cd ~/Documents/programiranje/Python/; python-start'
 alias programiranje-c='cd ~/Documents/programiranje/C/'
 alias programiranje-C='cd ~/Documents/programiranje/C/'
 
-alias nixos-git-push='/etc/nixos/scripts/push_to_git.sh'
-alias nixos-git-stage='/etc/nixos/scripts/stage_to_git.sh' # just to be able to nixos-rebuild
+alias nixos-gitanje='/etc/nixos/git_management/gitanje'
 
-alias nixos-manage-dotfiles='python /etc/nixos/dotfiles/dotfiles_management/move_files.py'
+alias nixos-dotfiles='python /etc/nixos/dotfiles/dotfiles_management/move_files.py'
 
+alias egui-shell-nix='nix-shell /etc/nixos/shells/egui_shell.nix'
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+
+# the right wine prefix
+export WINEPREFIX="$HOME/wine_stuff/test/"
+export WINEARCH=win64
+
+
+
 #export PATH=$PATH:</home/nick/Documents/programiranje/actual_programi/>
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
