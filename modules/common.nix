@@ -23,6 +23,8 @@
     wantedBy = [ "multi-user.target" ];
     after = [ "network-online.target" ];
 
+    path = [ pkgs.git ];
+
     serviceConfig = {
       Type = "oneshot";
       User = "nick";
