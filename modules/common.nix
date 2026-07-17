@@ -22,7 +22,6 @@
 
     wantedBy = [ "multi-user.target" ];
     after = [ "network-online.target" ];
-    wants = [ "network-online.target" ];
 
     serviceConfig = {
       Type = "oneshot";
@@ -31,6 +30,8 @@
       ExecStart = "/etc/nixos/git_management/gitanje pull";
       StandardOutput = "journal";
       StandardError = "journal";
+      Restart = "on-failure";
+      RestartSec = "10s";   wants = [ "network-online.target" ];
     };
   };
 
