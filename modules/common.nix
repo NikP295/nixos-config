@@ -23,7 +23,10 @@
     wantedBy = [ "multi-user.target" ];
     after = [ "network-online.target" ];
 
-    path = [ pkgs.git ];
+    path = with pkgs; [
+      git
+      openssh
+    ];
 
     serviceConfig = {
       Type = "oneshot";
