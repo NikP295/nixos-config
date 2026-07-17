@@ -1,5 +1,6 @@
 { config, pkgs, ... }: {
 
+# last test...?
   imports = [
     ../hardware/thinkold-hw.nix
     ../modules/system-settings.nix
