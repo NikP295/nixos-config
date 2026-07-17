@@ -27,8 +27,8 @@
     serviceConfig = {
       Type = "oneshot";
       User = "nick";
-      WorkingDirectory = "/etc/nixos/dotfiles/dotfile_management";
-      ExecStart = "/etc/nixos/dotfiles/dotfile_management/gitanje pull";
+      #WorkingDirectory = "/etc/nixos/git_management/";
+      ExecStart = "/etc/nixos/git_management/gitanje pull";
     };
   };
 
