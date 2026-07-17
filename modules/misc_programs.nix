@@ -15,14 +15,15 @@
     # misc
     fzf
     sl
-    viber
     calibre
     gimp
     klavaro
     unrar
-    kdePackages.yakuake
+
+    #kdePackages.yakuake
     astroterm
     gocryptfs
+    qalculate-gtk
 
   ];
 

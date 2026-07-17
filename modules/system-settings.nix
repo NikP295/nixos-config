@@ -3,7 +3,7 @@
 
 {
   # Set the stateVersion here.
-  config.system.stateVersion = "25.11";
+  config.system.stateVersion = "26.05";
   
   # Auto upgrades (updates)
   config.system.autoUpgrade.enable = true;

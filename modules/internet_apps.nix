@@ -7,9 +7,12 @@
     brave
     tor-browser
     firefox
-    #gaming
+    #communication
     discord
     vesktop
+    viber
+    signal-desktop
+    signal-cli
     #misc
     widevine-cdm
     freetube

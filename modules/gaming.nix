@@ -7,7 +7,6 @@
     winetricks
     protontricks
     protonplus
-    vinegar
     prismlauncher
     dosbox
     lutris
