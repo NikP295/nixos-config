@@ -1,7 +1,13 @@
-current_time=$(date)
+#!/usr/bin/env bash
+set -euo pipefail
 
-git -C /etc/nixos pull
+cd /etc/nixos
 
-echo "Big W, pulled from git!"
+echo "Syncing nixos config..."
+
+git fetch origin
+git reset --hard origin/main
+
+echo "Big W!"
 
 
