@@ -29,6 +29,8 @@
       User = "nick";
       #WorkingDirectory = "/etc/nixos/git_management/";
       ExecStart = "/etc/nixos/git_management/gitanje pull";
+      StandardOutput = "journal";
+      StandardError = "journal";
     };
   };
 

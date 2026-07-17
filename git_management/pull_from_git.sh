@@ -1,5 +1,3 @@
-git -C /etc/nixos add .
-
 current_time=$(date)
 
 git -C /etc/nixos pull
