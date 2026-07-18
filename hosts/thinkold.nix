@@ -1,6 +1,7 @@
 { config, pkgs, ... }: {
 
 #test!!!
+#test 2 !!!
   imports = [
     ../hardware/thinkold-hw.nix
     ../modules/system-settings.nix
