@@ -21,7 +21,7 @@
     wantedBy = [ "default.target" ];
     after = [ "default.target" ];
 
-    #restartIfChanged = false;
+    restartIfChanged = false;
 
     path = with pkgs; [
       git
@@ -40,7 +40,7 @@
       Restart = "on-failure";
       RestartSec = "30s";
 
-      #RemainAfterExit = true;
+      RemainAfterExit = true;
     };
   };
 
