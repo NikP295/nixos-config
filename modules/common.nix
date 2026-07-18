@@ -19,8 +19,8 @@
   systemd.user.services.gitanje-pull = {
     description = "Gitanje pull newest nixos config";
 
-    wantedBy = [ "graphical-session.target" ];
-    after = [ "graphical-session.target" ];
+    wantedBy = [ "default.target" ];
+    after = [ "default.target" ];
 
     path = with pkgs; [
       git
