@@ -2,17 +2,17 @@
 { config, pkgs, lib, ... }:
 
 {
-  config.system.stateVersion = "26.05";
+  system.stateVersion = "26.05";
   
   # Auto upgrades (updates)
-  config.system.autoUpgrade.enable = true;
-  config.system.autoUpgrade.dates = "weekly";
+  system.autoUpgrade.enable = true;
+  system.autoUpgrade.dates = "weekly";
 
   # Cleanup
-  config.nix.gc.automatic = true;
-  config.nix.gc.dates = "daily";
-  config.nix.gc.options = "--delete-older-than 30d";
-  config.nix.settings.auto-optimise-store = true;
+  nix.gc.automatic = true;
+  nix.gc.dates = "daily";
+  nix.gc.options = "--delete-older-than 30d";
+  nix.settings.auto-optimise-store = true;
   
   # user service that pulls the newest nixos config from github on launch 
   systemd.user.services.gitanje-pull = {
