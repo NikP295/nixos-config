@@ -77,4 +77,8 @@
 
   boot.loader.systemd-boot.enable = true; 
   boot.loader.efi.canTouchEfiVariables = true;
+
+  # gaming with wife
+  services.flatpak.enable = true;
+
 }

@@ -23,9 +23,6 @@
 
   nixpkgs.config.allowUnfree = true;
   
-  # gaming with wife
-  services.flatpak.enable = true;
-
   networking.hostName = "nixos-desktop";
   networking.firewall.enable = true;
 

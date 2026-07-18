@@ -30,6 +30,7 @@
       pkgs.kdePackages.qtwayland
       pkgs.kdePackages.qtmultimedia
       pkgs.kdePackages.kdenlive
+      pkgs.kdePackages.discover
   ];
 
   #environment.etc."sddm_background.png".source = /home/nick/Pictures/backgrounds/cyberpunk_city.png;
