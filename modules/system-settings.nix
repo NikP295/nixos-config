@@ -1,5 +1,5 @@
 # modules/state-version.nix
-{ config, lib, ... }:
+{ pkgs, config, lib, ... }:
 
 {
   config.system.stateVersion = "26.05";
