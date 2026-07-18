@@ -16,30 +16,6 @@
     lshw
     usbutils
   ];
-  systemd.user.services.gitanje-pull = {
-    description = "Gitanje pull newest nixos config";
-
-    wantedBy = [ "default.target" ];
-    after = [ "default.target" ];
-
-    path = with pkgs; [
-      git
-      openssh
-    ];
-
-    serviceConfig = {
-      Type = "oneshot";
-      User = "nick";
-      WorkingDirectory = "/etc/nixos";
-      ExecStart = "/etc/nixos/git_management/gitanje pull";
-
-      StandardOutput = "journal";
-      StandardError = "journal";
-
-      Restart = "on-failure";
-      RestartSec = "30s";
-    };
-  };
 
   networking.networkmanager.enable = true;
 
