@@ -1,4 +1,3 @@
-# modules/state-version.nix
 { config, pkgs, lib, ... }:
 
 {
