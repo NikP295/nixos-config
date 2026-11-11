@@ -1,7 +1,5 @@
 { config, pkgs, ... }:
 
-#testing
-
 {
   imports = [
     ../hardware/thinkchad-hw.nix
