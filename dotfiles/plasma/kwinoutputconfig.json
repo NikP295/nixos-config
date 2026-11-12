@@ -3,44 +3,40 @@
         "data": [
             {
                 "allowDdcCi": true,
-                "allowSdrSoftwareBrightness": true,
+                "allowSdrSoftwareBrightness": false,
                 "autoRotation": "InTabletMode",
-                "brightness": 1,
+                "brightness": 0.3,
                 "colorPowerTradeoff": "PreferEfficiency",
                 "colorProfileSource": "sRGB",
-                "connectorName": "HDMI-A-2",
+                "connectorName": "eDP-1",
                 "detectedDdcCi": false,
-                "edidHash": "f54f3d18672f449627112ab8c392ec15",
-                "edidIdentifier": "AOC 10128 20658 12 2019 0",
+                "edidHash": "fe51604409f72dcca1cdac5268b1a1f6",
+                "edidIdentifier": "CMN 5652 0 16 2021 0",
                 "edrPolicy": "always",
                 "highDynamicRange": false,
                 "iccProfilePath": "",
                 "maxBitsPerColor": 0,
                 "mode": {
-                    "height": 1080,
-                    "refreshRate": 144001,
+                    "height": 1200,
+                    "refreshRate": 60003,
                     "width": 1920
                 },
                 "overscan": 0,
                 "rgbRange": "Automatic",
-                "scale": 1.2,
+                "scale": 1.25,
                 "sdrBrightness": 200,
                 "sdrGamutWideness": 0,
                 "transform": "Normal",
-                "uuid": "a5ae6eb4-1361-4621-9a81-94ea5669e80a",
-                "vrrPolicy": "Never",
+                "uuid": "be35a672-82fd-4441-a36a-dd69e7db2b60",
+                "vrrPolicy": "Automatic",
                 "wideColorGamut": false
             },
             {
-                "allowDdcCi": true,
                 "allowSdrSoftwareBrightness": true,
                 "autoRotation": "InTabletMode",
                 "brightness": 1,
-                "colorPowerTradeoff": "PreferEfficiency",
                 "colorProfileSource": "sRGB",
-                "connectorName": "Virtual-virtual-xdp-kde-discord",
-                "detectedDdcCi": false,
-                "edrPolicy": "always",
+                "connectorName": "Virtual-Virtual1",
                 "highDynamicRange": false,
                 "iccProfilePath": "",
                 "mode": {
@@ -54,8 +50,7 @@
                 "sdrBrightness": 200,
                 "sdrGamutWideness": 0,
                 "transform": "Normal",
-                "uuid": "36c994b1-d322-4c4a-b662-7b5fd32d391c",
-                "vrrPolicy": "Never",
+                "vrrPolicy": "Automatic",
                 "wideColorGamut": false
             }
         ],
@@ -95,10 +90,25 @@
                         "enabled": true,
                         "outputIndex": 1,
                         "position": {
-                            "x": 1600,
+                            "x": 1536,
                             "y": 0
                         },
                         "priority": 1,
+                        "replicationSource": ""
+                    }
+                ]
+            },
+            {
+                "lidClosed": true,
+                "outputs": [
+                    {
+                        "enabled": true,
+                        "outputIndex": 0,
+                        "position": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "priority": 0,
                         "replicationSource": ""
                     }
                 ]
